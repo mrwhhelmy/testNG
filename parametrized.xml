@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Suites Examples: Regression, Smoke -->
+<suite name="Parametrized Suite" parallel="tests" thread-count="2">
+    <!-- Tests Examples: Test using Chrome, Edge -->
+    <parameter name="userName" value="admin"/>
+    <parameter name="password" value="admin"/>
+
+    <test name="Parametrized Test on Edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="SessionOne.Parametrized"/>
+        </classes>
+    </test>
+
+    <test name="Parametrized Test on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="SessionOne.Parametrized"/>
+        </classes>
+    </test>
+
+</suite>

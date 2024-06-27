@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Suites Examples: Regression, Smoke -->
+<suite name="Check broken Suite">
+    <!-- Tests Examples: Test using Chrome, Edge -->
+    <test name="Check broken Test Cases on Release 10">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="broken"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="SessionOne.Assertions"></class>
+        </classes>
+    </test>
+
+</suite>
