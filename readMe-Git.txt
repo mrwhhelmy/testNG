@@ -40,4 +40,6 @@ git push u- origin name-of-branch
 To control branches:
 ---------------------
 git branch
-git checkout -b personal-laptop-first
+git checkout -b name-of-branch
+
+git pull origin main
