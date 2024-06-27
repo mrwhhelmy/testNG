@@ -14,3 +14,4 @@ git status
 git add filename.ext
 git add .
 git restore filename.ext
+git commit -m "initial commit"
