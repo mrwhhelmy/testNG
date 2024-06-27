@@ -43,3 +43,12 @@ git branch
 git checkout -b name-of-branch
 
 git pull origin main
+
+*Working on main branch*
+git add .
+git commit -m "Checking Empty folders with .gitkeep"
+git push origin main
+
+To remove cashed files:
+-----------------------
+git rm --cached -r .
